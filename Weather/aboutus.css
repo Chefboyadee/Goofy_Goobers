@@ -1,0 +1,172 @@
+*{
+
+  margin: 0;
+  padding:0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+
+.navbar{
+  width:100%;
+  position:absolute;
+  top:0;
+  left:0;
+  padding:20px 8%;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  
+}
+
+.navbar ul li{
+  list-style: none;
+  display: inline-block;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
+  margin-left:40px;
+  
+}
+
+.navbar ul li a{
+  color: white;
+  font-size:18px;
+  text-decoration: none;
+}
+
+li a::after{
+  content:'';
+  width:0;
+  height:3px;
+  background-color:#BCF0DE;
+  margin:auto;
+  display:block;
+}
+
+li a:hover::after{
+  width:100%;
+  transition: width 0.3s linear;
+}
+
+.content{
+  text-align: center;
+  margin-top:100px;
+  margin-bottom: 400px;
+
+ 
+
+}
+
+.welcome{
+  color:#E5AB6A;
+  width:700px;
+}
+
+
+
+.content h1{
+  font-size:140px;
+  color:white;
+  font-weight:600;
+  transition: 0.5s;
+  margin-bottom:600;
+
+  
+  
+  
+}
+.content h1:hover{
+ -webkit-text-stroke:1px white;
+  color: transparent;
+  font-size: 160px;
+  
+  
+}
+
+ 
+
+.content a{
+  text-decoration: none;
+  display:inline-block;
+  color:white;
+  font-size:22px;
+  border: 2px solid white;
+  padding:14px 70px;
+  border-radius:50px;
+  margin-top:20px;
+}
+
+.content a:hover{
+    background-color: #BCF0DE;
+  border: 3px solid #BCF0DE;
+    color: black;
+  font-size:24px;
+  transition: 0.5s;
+}
+
+
+
+.back-video{
+  position:absolute;
+  right:0;
+  bottom:0;
+  z-index:-1;
+}
+
+@media (min-aspect-ratio: 16/9){
+  .back-video{
+    width:100%;
+    height:auto;
+  }
+}
+
+@media (max-aspect-ratio: 16/9){
+  .back-video{
+    width:auto;
+    height:100%;
+  }
+}
+.footer{
+  width:100%;
+  position:fixed;
+  top:500;
+  bottom:0;
+  right:0;
+  padding:20px 8%;
+  display:flex;
+  align-items:center;
+  justify-content:flex-end;
+ 
+  
+}
+
+.footer ul li{
+  list-style: none;
+  display: inline-block;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
+  margin-left:40px;
+  
+}
+
+.footer ul li {
+  color: white;
+  font-size:14px;
+  text-decoration: none;
+}
+
+.footer ul li::after{
+  content:'';
+  width:0;
+  height:3px;
+  background-color:#c97351;
+  margin:auto;
+  display:block;
+}
+
+.footer ul li:hover::after{
+  width:100%;
+  transition: width 0.3s linear;
+}
